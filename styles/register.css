@@ -16,21 +16,41 @@ body{
     width: 100%;
     height: auto;
     background-color: rgba(98, 106, 101, 0.87);
+    overflow: hidden;
+}
+.navigation .left{
+
+    float: left;
+    margin-left: 100px;
+    display: inline-block;
+}
+.navigation .right{
+    margin-right: 170px;
+    float: right;
+    display: inline-block;
 }
 .navigation label{
     text-align: right;
+    color: white;
 }
-
+.navigation button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navigation button .fa-user{
+    color: white;
+}
 .header{
     color: rgba(123, 133, 127, 0.87);
 }
 .signup {
 
     box-shadow: 4px 5px 10px grey;
-    margin: 120px auto;
+    margin: 100px auto;
     width: 270px;
     height: auto;
-    padding: 0px 15px;
+    padding: 0px 10px;
     background-color: white;
     text-align: center;
     border: solid 1px #cbc9c9;
