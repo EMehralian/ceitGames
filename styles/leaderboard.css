@@ -5,5 +5,127 @@
 */
 
 body {
-	background-color: silver;
+	/*background-color: silver;*/
+	font-family: Shabnam;
+}
+
+ol{
+
+	direction: rtl;
+	list-style: persian;
+
+
+}
+.container {
+
+	box-shadow: 4px 5px 10px grey;
+	margin: 100px auto;
+	width: 450px;
+	height: auto;
+	padding: 0px 10px;
+	background-color: white;
+	text-align: center;
+	border: solid 1px #cbc9c9;
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+.container .top10{
+
+}
+.container .top10 .people {
+	margin-left: -1px;
+	/*border-right: 1px solid #e6e6e6;*/
+	/*border-left: 1px solid #e6e6e6;*/
+
+}
+.container .top10 .people .person {
+	/*position: relative;*/
+	width: 100%;
+	padding: 12px 10% 16px;
+	/*background-color: #fff;*/
+}
+
+.container .top10 .people .person img {
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+/*.container .top10 .people .person .name {*/
+	/*font-size: 14px;*/
+	/*line-height: 22px;*/
+	/*color: #1a1a1a;*/
+	/*font-weight: 600;*/
+/*}*/
+/*.container .top10 .people .person .time {*/
+	/*font-size: 14px;*/
+	/*position: absolute;*/
+	/*top: 16px;*/
+	/*right: 10%;*/
+	/*padding: 0 0 5px 5px;*/
+	/*color: #999;*/
+	/*background-color: #fff;*/
+/*}*/
+/*.container .top10 .people .person .preview {*/
+	/*font-size: 14px;*/
+	/*display: inline-block;*/
+	/*overflow: hidden !important;*/
+	/*width: 70%;*/
+	/*white-space: nowrap;*/
+	/*text-overflow: ellipsis;*/
+	/*color: #999;*/
+/*}*/
+/*.container .top10 .people .person.active, .container .left .people .person:hover {*/
+	/*margin-top: -1px;*/
+	/*margin-left: -1px;*/
+	/*padding-top: 13px;*/
+	/*border: 0;*/
+	/*background-color: #00b0ff;*/
+/*}*/
+/*.container .top10 .people .person.active span, .container .left .people .person:hover span {*/
+	/*color: #fff;*/
+	/*background: transparent;*/
+/*}*/
+/*!*.container .top10 .people .person.active:after, .container .left .people .person:hover:after {*!*/
+	/*display: none;*/
+/*}*/
+
+li::before {
+	content: "";
+	width: 80px;
+	display: inline-block;
+}
+li{
+
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.info{
+
+	float: right;
+	display: inline-block;
+}
+.rate{
+
+	font-size: 70%;
+	display: inline-block;
+
+}
+.imageSpan{
+	position: relative;
+	left: 10px;
+}
+.footer button{
+	margin-bottom: 20px;
+	font-size: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.fa-circle{
+margin-left: 2px;
 }
