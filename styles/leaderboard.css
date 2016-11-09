@@ -238,3 +238,9 @@ hr{
 	color: gold;
 }
 
+a :hover{
+	background: gold;
+}
+/*#person1 :hover {*/
+	/*background-color: gold;*/
+/*}*/
