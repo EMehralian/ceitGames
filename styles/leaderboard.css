@@ -3,9 +3,15 @@
 	date: dd-mm-yy;
 	version: 0.1;
 */
-
+@font-face {
+	font-family: 'BKoodakBold';
+	src: url('http://fontonline.ir/fonts/BKoodakBold.eot?#') format('eot'),
+	url('http://fontonline.ir/fonts/BKoodakBold.ttf') format('truetype'),
+	url('http://fontonline.ir/fonts/BKoodakBold.woff') format('woff');
+}
 body {
-	/*background-color: silver;*/
+	  font-family: 'BKoodakBold',tahoma;
+	/*font-family: sans-serif;*/
 }
 
 
@@ -13,7 +19,7 @@ body {
 
 	box-shadow: 4px 5px 10px grey;
 	margin: 100px auto;
-	width: 450px;
+	width: 400px;
 	height: auto;
 	padding: 0px 10px;
 	background-color: white;
@@ -24,38 +30,132 @@ body {
 .header{
 	text-align: center;
 }
-.rank1 {
-	display: inline-block;
-}
-.rank2 {
-	display: inline-block;
-}
-.rank3 {
-	display: inline-block;
+
+.hexagon {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 150px;
+	height: 82px;
+	position: relative;
+	border: none;
+	font: normal 100%/normal Arial, Helvetica, sans-serif;
+	color: rgba(0,0,0,1);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: #1abc9c;
 }
 
-.bestThree .rank2 img{
+.hexagon::before {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 0;
+	height: 0;
+	position: absolute;
+	content: "";
+	top: -40px;
+	left: 0;
+	border: 75px solid rgba(0,0,0,0);
+	border-top: 0 solid;
+	border-bottom: 40px solid #1abc9c;
+	font: normal 100%/normal Arial, Helvetica, sans-serif;
+	color: rgba(0,0,0,1);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	text-shadow: none;
+}
 
-	width: 40px;
-	height: 40px;
+.hexagon::after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	width: 0;
+	height: 0;
+	position: absolute;
+	content: "";
+	bottom: -40px;
+	left: 0;
+	border: 75px solid rgba(0,0,0,0);
+	border-top: 40px solid #1abc9c;
+	border-bottom: 0 solid;
+	font: normal 100%/normal Arial, Helvetica, sans-serif;
+	color: rgba(0,0,0,1);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	text-shadow: none;
+}
+
+#rank1 {
+	display: inline-block;
+
+}
+#rank2 {
+	margin-left: 10px;
+	margin-right: 50px;
+	display: inline-block;
+}
+#rank3 {
+	margin-right: -15px;
+	margin-left: 45px;
+	display: inline-block;
+}
+.topNum{
+	text-align: center;
+}
+.buttomInfo{
+	text-align: center;
+}
+#rank1 .imageSpan{
+	margin-left: 20px;
+}
+#rank2 .imageSpan{
+	margin-left: 25px;
+}
+#rank3 .imageSpan{
+	margin-left: 30px;
+}
+
+.buttomRate{
+	text-align: center;
+	font-size: 80%;
+}
+
+.bestThree #rank2 img{
+
+	width: 50px;
+	height: 50px;
 	margin-right: 5px;
 	border-radius: 50%;
+	border: solid 3px;
+	border-color: silver;
 }
 
-.bestThree .rank1 img{
+.bestThree #rank1 img{
 
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	margin-right: 5px;
 	border-radius: 50%;
+	border: solid 3px;
+	border-color: gold;
+}
+.bestThree #rank3 img{
+
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+	border-radius: 50%;
+	border: solid 3px;
+	border-color: #be4723;
 }
  .number{
 	 display: inline-block;
 	 float: right;
 	 list-style: persian;
+	 margin-top: 12px;
+	 margin-left: 12px;
  }
-
-
 
 .container .top10 .people .person img {
 	float: right;
@@ -72,17 +172,20 @@ body {
 	margin-right: 20px;
 	line-height: 1.4;
 }
+.score{
+	color: #aedf4b;
+	font-size: 120%;
+}
 .rate{
-
 	font-size: 70%;
 	display: inline-block;
 	margin-left: 30px;
 	margin-top: 15px;
-
 }
 
 .footer{
 	align-items: center;
+
 }
 .footer button{
 	display: block;
@@ -91,13 +194,41 @@ body {
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	margin-top: 30px;
-	margin-left: 180px;
+	margin-top: 20px;
+	margin-left: 170px;
+	padding-top: 10px;
 }
+
 .fa-circle{
 margin-left: 2px;
+	color: #adbbb2;
 }
 
+.fa-star{
+	color: #d9d3cc;
+}
+hr{
+	border :1px solid  #d9d3cc;
+}
 
+.person{
+	float: left;
+	display: block;
+	width: 100%;
+	height:60px ;
+}
+ #2digit img{
 
+	margin-right: 7px ;
+
+}
+ .bestThree #rank2 .buttomRate .star1 ,.bestThree #rank2 .buttomRate .star2 ,.bestThree #rank2 .buttomRate .star3 ,.bestThree #rank2 .buttomRate .star4 ,.bestThree #rank2 .buttomRate .star5{
+	 color: gold;
+ }
+.bestThree #rank1 .buttomRate .star1 ,.bestThree #rank1 .buttomRate .star2 ,.bestThree #rank1 .buttomRate .star3 ,.bestThree #rank1 .buttomRate .star4 {
+	color: gold;
+}
+.bestThree #rank3 .buttomRate .star1 ,.bestThree #rank3 .buttomRate .star2 ,.bestThree #rank3 .buttomRate .star3 ,.bestThree #rank3 .buttomRate .star4 {
+	color: gold;
+}
 
