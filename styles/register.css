@@ -11,36 +11,7 @@ body{
  line-height: 250%;
 }
 
-.navigation{
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: rgba(98, 106, 101, 0.87);
-    overflow: hidden;
-}
-.navigation .left{
 
-    float: left;
-    margin-left: 100px;
-    display: inline-block;
-}
-.navigation .right{
-    margin-right: 170px;
-    float: right;
-    display: inline-block;
-}
-.navigation label{
-    text-align: right;
-    color: white;
-}
-.navigation button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.navigation button .fa-user{
-    color: white;
-}
 .header{
     color: rgba(123, 133, 127, 0.87);
 }
