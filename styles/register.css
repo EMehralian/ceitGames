@@ -50,6 +50,7 @@ body{
 }
 .text:focus{
     border-bottom-color:rgba(228, 81, 97, 0.87);
+    outline: none;
 }
 
 .fa-user,.fa-envelope,.fa-lock{
@@ -67,7 +68,7 @@ body{
 }
 
 .button {
-    background-color: rgba(104, 111, 228, 0.87); /* Green */
+    background-color: rgba(104, 111, 228, 0.87);
     border: none;
     border-radius: 4px;
     color: white;
@@ -82,27 +83,44 @@ body{
     box-shadow: 2px 3px 4px grey;
 
 }
+
+.button:hover{
+    background-color: rgba(114, 121, 255, 0.72);
+    box-shadow: 5px 5px 10px grey;
+}
+.button:focus{
+    cursor:progress;
+    border-color: #535ab8;
+    background-color: rgba(114, 121, 255, 0.72);
+    box-shadow: 5px 5px 10px grey;
+}
 #check{
     text-align: right;
 }
 #checkbox1{
     float: right;
 }
-input[type=checkbox]:not(old){
+
+
+
+input[type=checkbox]{
     width   : 28px;
     margin  : 0;
     padding : 0;
     opacity : 0;
 }
 
-input[type=checkbox]:not(old) + label{
+input[type=checkbox] + label{
+
     display      : inline-block;
-    margin-left  : -28px;
+    margin-left  : -20px;
     padding-left : 28px;
     background   : url('../assets/checks.png') no-repeat 0 0;
     line-height  : 24px;
 }
 
-input[type=checkbox]:not(old):checked + label{
+input[type=checkbox]:checked + label{
     background-position : 0 -24px;
 }
+
+
