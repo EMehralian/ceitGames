@@ -28,60 +28,48 @@ body {
 	text-align: center;
 }
 
-.hexagon {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 150px;
-	height: 82px;
+.hexagon{
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	width: 15px;
+	height: 15px;
+	background:black;
+	color: white;
+	border-radius: 50px;
+	font-size: 80%;
+}
+span{
 	position: relative;
-	border: none;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	background: #1abc9c;
 }
+/*.hexagon {*/
+	/*position: relative;*/
+	/*width: 15px;*/
+	/*height: 8.66px;*/
+	/*background-color: #3e4546;*/
+	/*margin: 4.33px 0;*/
+/*}*/
 
-.hexagon::before {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 0;
-	height: 0;
-	position: absolute;
-	content: "";
-	top: -40px;
-	left: 0;
-	border: 75px solid rgba(0,0,0,0);
-	border-top: 0 solid;
-	border-bottom: 40px solid #1abc9c;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	text-shadow: none;
-}
+/*.hexagon:before,*/
+/*.hexagon:after {*/
+	/*content: "";*/
+	/*position: absolute;*/
+	/*width: 0;*/
+	/*border-left: 7.5px solid transparent;*/
+	/*border-right: 7.5px solid transparent;*/
+/*}*/
 
-.hexagon::after {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 0;
-	height: 0;
-	position: absolute;
-	content: "";
-	bottom: -40px;
-	left: 0;
-	border: 75px solid rgba(0,0,0,0);
-	border-top: 40px solid #1abc9c;
-	border-bottom: 0 solid;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	text-shadow: none;
-}
+/*.hexagon:before {*/
+	/*bottom: 100%;*/
+	/*border-bottom: 4.33px solid #3e4546;*/
+/*}*/
+
+/*.hexagon:after {*/
+	/*top: 100%;*/
+	/*width: 0;*/
+	/*border-top: 4.33px solid #3e4546;*/
+/*}*/
+
 
 #rank1 {
 	display: inline-block;
@@ -147,13 +135,28 @@ body {
 	 margin-right: 10px;
  }
 
-.container .top10 .people .person img {
+.container .top10 .people .person .imageSpan{
 	float: right;
+}
+
+.abc{
+	left: 25px;
+	top: 25px;
+	font-size: 80%;
+	color: white;
+}
+
+
+
+.container .top10 .people .person .imageSpan img{
 	width: 40px;
 	height: 40px;
 	margin-right: 5px;
 	border-radius: 50%;
+	border: solid 1px;
+	border-color: #d9d3cc;
 }
+
 
 .info{
 	float: right;
