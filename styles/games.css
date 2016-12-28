@@ -1,12 +1,6 @@
 
-body,html{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 #header{
+    /*position: relative;*/
     background-image:url("../images/header.jpg");
     background-size: cover;
     height: 200px;
@@ -19,4 +13,112 @@ body,html{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#container{
+    position: absolute;
+    color: white;
+    margin-top: 50px;
+
+}
+
+#container .imageSpan{
+    margin-left: 10px;
+}
+
+#container .imageSpan img{
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    border-radius: 10%;
+}
+
+
+#container .Info{
+    direction: rtl;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+#container button{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 250px;
+    margin-left: 300px;
+}
+#container .Info .name{
+    color: white;
+    font-size: 200%;
+}
+#container .Info .categury span{
+    font-size: 90%;
+    text-decoration: underline;
+    color: gray;
+}
+
+#container button a{
+    color: white !important;
+}
+.rate .score{
+    display: inline;
+}
+.rate .buttomRate{
+    display: inline;
+}
+
+.fa-star{
+    color: rgba(17, 26, 10, 0.23);
+}
+
+#tabRow{
+    background-color: #f1f1f1;
+}
+
+ul.tab {
+    width:60%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+#tabRow .tab li a{
+    color: gray;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: right;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a.active {
+    border-bottom: 1px solid blue;
+    outline:none;
+}
+
+ul.tab li a:focus{
+    outline:none;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }

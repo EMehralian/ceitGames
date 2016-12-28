@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <title>games</title>
     <link href="../styles/games.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <script src="../js/games.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../_/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/font-face.css" rel="stylesheet"
+          type="text/css"/>
 </head>
 <body>
 
 <div id="header">
     <div class="blur">
+        <div id="container">
 
+            <button class="btn btn-primary">
+                <a href="../html/register.html">شروع بازی</a>
+            </button>
+
+            <div class="Info">
+                <div class="name">
+                    Batterfiled 4: Dragon's Theeth
+                </div>
+                <div class="categury">
+                    <span>اکشن</span>،<span>اول شخص</span>،<span>مولتی مدیا</span>
+                </div>
+                <div class="rate">
+                    <div class="buttomRate">
+                        <i class="fa fa-star blue-star"></i>
+                        <i class="fa fa-star blue-star"></i>
+                        <i class="fa fa-star blue-star"></i>
+                        <i class="fa fa-star "></i>
+                        <i class="fa fa-star "></i>
+                    </div>
+                    <div class="score">
+                        ۴.۳(۸۴رای)
+                    </div>
+                </div>
+            </div>
+
+
+            <span class="imageSpan">
+                <img src="../images/call-of-duty-background-17.jpg" alt="" />
+            </span>
+
+        </div>
     </div>
 
+</div>
+<div id="tabRow">
+    <ul class="tab">
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'gameInfo')">اطلاعات بازی</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'ranking')">رتبه بندی و امتیازات</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Usercomments')">نظرات کاربران</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'similarGames')">بازی های مشابه</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'images')">عکس ها و ویدیوها</a></li>
+
+    </ul>
+</div>
+
+<div id="gameInfo" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+</div>
+
+<div id="ranking" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Usercomments" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="similarGames" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="images" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
 </div>
 
 </body>
