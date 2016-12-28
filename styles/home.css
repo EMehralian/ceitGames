@@ -56,7 +56,7 @@ html, body {
     /*color: white;*/
 /*}*/
 #logo{
-    margin-left: 800px;
+    margin-left: 1000px;
 }
 
 #logo a{
@@ -94,23 +94,47 @@ html, body {
     margin: auto;
 }
 
-#newGame h3{
+#newGame #head{
+    overflow: hidden;
+}
+
+#newGame #head h3{
     text-align: right;
+    float: right;
+}
+#newGame #head #pagination{
+    float: left;
+    vertical-align: middle;
+    margin-top: 25px;
 }
 #newGamesSlider{
     /*width: 70%;*/
     margin: auto;
+    margin-bottom: 40px;
 }
 
 #newGamesSlider .newGamesItem{
+    margin: 5px;
+    background-size: 100% 100%;
+    border: 1px solid rgba(105, 113, 108, 0.44);
+}
+
+#newGamesSlider .newGamesItem:hover{
     margin: 3px;
     background-size: 100% 100%;
-    border: 1px solid;
+    box-shadow: 5px 10px 10px rgb(135, 135, 135);
+    /*border: 1px solid;*/
+
 }
+
 #newGamesSlider .newGamesItem img{
     display: block;
     width: 100%;
     height: 100px;
+}
+
+#newGamesSlider .newGamesItem .name{
+    color: blue;
 }
 
 .Info{
@@ -126,6 +150,7 @@ html, body {
 }
 #commentsRow{
     background-color: rgba(139, 150, 143, 0.23);
+    margin-bottom: 0px;
 }
 #comments{
     width: 60%;
@@ -153,10 +178,15 @@ html, body {
 
 #commentsAndChats{
     float: right;
-    margin-left:60px ;
+    margin-left:150px ;
 }
 #gameGuids{
     float: right;
+}
+.commentHeaderLink{
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
 }
 #commentsAndChats .comment .imageSpan img{
     width: 40px;
@@ -178,6 +208,8 @@ html, body {
 .comment{
     direction: rtl;
     border-bottom: solid 1px rgba(139, 150, 143, 0.33);
+    padding-bottom: 20px;
+    margin-top: 10px;
 }
 .commentText{
     display: inline-block;
@@ -188,4 +220,110 @@ html, body {
 .date{
     font-size: 10px;
     color: rgba(139, 150, 143, 0.69);
+}
+
+#blueRow{
+    background-image: url("../images/best_hd_assassins_creed_black_flag_game_wallpapers.jpg");
+    background-size: cover;
+    height: 250px;
+    color: white;
+}
+#blueBlur{
+    background-color: rgba(99, 132, 255, 0.69);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer-top{
+    background: #f1f3f1;
+}
+#footer-amirkabir-icon{
+    float: left;
+    direction: rtl;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#footer-links{
+    list-style-type: none;
+    margin-top: 25px;
+
+}
+#footer-social-div {
+    direction: rtl;
+    text-align: right;
+    margin-right: 350px;
+}
+.row {
+    margin: 0px;
+}
+#social {
+    padding: 15px;
+    font-size: 22px;
+}
+.footer-down {
+    background: #cfd2d7;
+    min-height: 100px;
+}
+.col-sm-12{
+    padding: 0px;
+}
+.text-center {
+    margin: auto;
+}
+.vertical-align-wrap {
+    display: table;
+    width: 100%;
+}
+.col-sm-12{
+    padding: 0px;
+}
+
+.social {
+    border-radius: 50%;
+    background: #9c9ca4;
+    color: #fffefe;
+    min-width : 30px;
+    min-height: 30px;
+    text-align: center;
+
+    padding: 4px 0px 0px 0px;
+    vertical-align: middle;
+}
+
+
+#footer-links li{
+    display: inline;
+    margin-right: 10px;
+}
+#footer-links li a{
+    text-decoration: none;
+
+    color: #43A4EE;
+}
+#menu {
+    padding: 0px;
+    height: auto;
+    margin-top: 7px;
+}
+
+#footer-amirkabir-icon a{
+    text-decoration: none;
+}
+.studio {
+    color: #2dc7ff;
+}
+
+#content-trailer span i{
+    color: lightgray;
+    margin-top: 3px;
+}
+#trailer-icon{
+    margin-top: 5px;
+}
+#amirkabir{
+    margin-top: 0px; !important;
 }

@@ -20,11 +20,12 @@ $(document).ready(function() {
     $("#newGamesSlider").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items : 4,
-        pagination:false
+        pagination:true
 
     });
 
-    // $(".item").html()
+    $(".owl-controls").appendTo($("#pagination"));
+
 
     // $.getJSON( "‫‪api.ie.ce-it.ir/F95/home‬‬", function( data ) {
     //     var items = [];

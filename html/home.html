@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../styles/home.css">
     <link href="../owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="../owl-carousel/owl.theme.css" rel="stylesheet">
-
+    <link href="../fonts/ionicons.css" rel="stylesheet">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../_/bootstrap.min.css">
@@ -63,7 +63,11 @@
 
     </div>
 <div id="newGame">
-    <h3>جدید ترین بازی ها</h3>
+    <div id="head">
+        <h3>جدید ترین بازی ها</h3>
+        <div id="pagination">paginations should come here!</div>
+        <!--TODO-->
+    </div>
     <div id="newGamesSlider" class="owl-carousel owl-theme">
         <div class="newGamesItem">
             <img src="../images/ogImage.img.jpg">
@@ -160,13 +164,13 @@
 </div>
     <div id="commentsRow">
         <div id="comments">
-            <h2>جدید ترین بازی ها</h2>
+            <h2>نظرات کاربران و راهنمای بازی ها</h2>
             <div id="description">
                 <p>لوروم اپیسوم یا طرح نمابه متنی آزمایشی و بی معنی در صنعت چاپ، صفحه آرایی و طراحی گرافیک گفته می شود</p>
             </div>
             <div id="cgContainer">
                 <div id="commentsAndChats">
-                    <h3>نظرات و گفت و گوها</h3>
+                        <a href="../html/login.html"><span class="commentHeaderLink" >نظرات و گفت و گوها</span></a>
                     <div class="comment">
                          <span class="imageSpan">
                             <img src="../assets/user.png" alt="" />
@@ -229,7 +233,7 @@
                 </div>
 
                 <div id="gameGuids">
-                    <h3>آخرین راهنماهای بازی</h3>
+                    <a href="../html/login.html"><span class="commentHeaderLink" >آخرین راهنماهای بازی</span></a>
                     <div class="comment">
                          <span class="imageSpan">
                             <img src="../images/421645.jpg" alt="" />
@@ -294,6 +298,64 @@
 
         </div>
     </div>
+
+    <div id="blueRow">
+        <div id="blueBlur">
+        <br>
+        <h2>
+                        به جامعه بازی سازان امیرکبیر بپیوندید
+        </h2>
+
+        <p>
+            بیش از ۵۰۰۰ عضو در سراسر کشور
+        </p>
+        <br>
+        <button class="btn btn-default">
+            <a href="../html/register.html">به ما بپیوندید</a>
+        </button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-top col-sm-12">
+            <div class="container">
+                <div class="row">
+
+
+                    <div id="footer-links-div">
+
+
+                        <ul id="footer-links">
+                            <div id="footer-amirkabir-icon">
+                                <a href="../html/home.html">
+                                    <p id="amirkabir" class="h4 text-muted"><i
+                                            class="icon glyphicon ion-ios-game-controller-b"></i> امیرکبیر <span
+                                            class="studio">استودیو</span></p></a>
+                            </div>
+                            <li><a href="../html/home.html">صفحه اصلی</a></li>
+                            <li><a href="#">درباره ما</a></li>
+                            <li><a href="#">ارتباط با سازندگان</a></li>
+                            <li><a href="#">سوالات متداول</a></li>
+                            <li><a href="#">حریم خصوصی</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="footer-social-div" class="row">
+                    <div class="col-xs-12" id="social">
+                        <a href="http://facebook.com"><i class="ionicons ion-social-facebook social"></i></a>
+                        <a href="http://twitter.com"><i class="ionicons ion-social-twitter social"></i></a>
+                        <a href="http://instagram.com"><i class="ionicons ion-social-instagram social"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down col-sm-12 vertical-align-wrap">
+            <p class="text-muted h4 text-center vertical-align--middle">تمامی حقوق محفوظ و متعلق به دانشگاه امیرکبیر است</p>
+        </div>
+    </footer>
+
 
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../owl-carousel/owl.carousel.js"></script>
