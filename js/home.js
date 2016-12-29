@@ -2,11 +2,13 @@
  * Created by ehsan on 12/23/16.
  */
 
+var div= document.createElement("div");
+
 
 for(var i=0 ; i<5; i++) {  ////items in the main slider
     var item = document.createElement("div");
     item.className = "item";
-    var div=document.createElement("div");
+    div=document.createElement("div");
     div.className = "itemblur";
     item.appendChild(div);
     var p =document.createElement("p");
@@ -103,8 +105,8 @@ for(i=0 ; i< 5; i++){
 
 $(document).ready(function() {
     $("#slider").owlCarousel({
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
-        items : 4,
+        autoPlay: 5000, //Set AutoPlay to 3 seconds
+        items : 5,
         pagination:false
 
         });
@@ -123,35 +125,50 @@ $(document).ready(function() {
 
     });
     $(".owl-controls").appendTo($("#pagination"));
+
+// ----------------------------ajax get request-------------------------------
+    $.ajax({
+        url: " http://api.ie.ce-it.ir/F95/home",
+        dataType:'json',
+        success: function( Object ) {
+            var t= (Object)['response']['result']['homepage'];
+            var slider=t['slider'];
+            var newgame= t['newgame']
+            console.log(slider);
+        }
+
+    });
+
+// -------------------------------slider_hover----------------------------------
+    $('#slider')
+        .on('mouseover','.item', function(e) {
+            var carousel = $('.owl-carousel').data('owl.carousel');
+            e.preventDefault();
+            $(this).css('height','110');
+            $(this).find('div').addClass("hoverblur");
+        })
+        .on('mouseout','.item', function(e) {
+            var carousel = $('.owl-carousel').data('owl.carousel');
+            e.preventDefault();
+            $(this).css('height','100');
+            $(this).find('div').removeClass("hoverblur");
+            console.log(carousel);
+        })
+        .on('click', '.item', function(e) {
+            $('#slider .item div').removeClass('clickblur')
+            e.preventDefault();
+            var bg = $(this).css('background-image');
+            $(this).find('div').addClass("clickblur");
+            bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+            $("#firstViewPoint").css("height",$(window).height()-100)
+                .css("background-image","url("+bg+")");
+            console.log(bg);
+
+        })
+    ;
+
+
 });
 
-$('#slider')
-    .on('mouseover', function(e) {
-        var carousel = $('.owl-carousel').data('owl.carousel');
-        e.preventDefault();
-        $(this).hover(function () {
-            $(this).css("background-color","yellow");
-        });
-        console.log(carousel);
-    })
-    // .on('mouseout', '.owl-item', function(e) {
-    //     var carousel = $('.owl-carousel').data('owl.carousel');
-    //     e.preventDefault();
-    //     $(this).hover(function () {
-    //         $(this).css("background-color","");
-    //     });
-    //     console.log($(this).index());
-    // })
-    .on('click', '.item', function(e) {
-        var carousel = $('.owl-carousel').data('owl.carousel');
-        e.preventDefault();
-        var bg = $(this).css('background-image');
-        bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
-        $("#firstViewPoint").css("height",$(window).height()-100)
-            .css("background-image","url("+bg+")");
-        console.log(bg);
-
-    })
-;
 
 
