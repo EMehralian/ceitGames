@@ -9,12 +9,11 @@
 	padding-bottom: 5px;
 }
 
-#rankContainer {
+.container {
 
 	box-shadow: 4px 5px 10px grey;
-	width: 85%;
+	width: 80%;
 	margin: auto;
-	padding-top: 30px;
 	height: auto;
 	padding: 0px 0px;
 	background-color: white;
@@ -37,38 +36,9 @@
 	border-radius: 50px;
 	font-size: 80%;
 }
-#rank1 .hexagon{
-	top: 20px;
-	left: 60px;
+span{
+	position: relative;
 }
-#rank2 .hexagon{
-	top: 15px;
-	left: 40px;
-}
-
-#rank3 .hexagon{
-	top: 15px;
-	left: 40px;
-}
-
-#head{
-	direction: rtl;
-	text-align: right;
-	background-color: #f1f1f1;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid rgba(224, 224, 224, 0.44);
-	border-top: 1px solid rgba(224, 224, 224, 0.44);
-	margin-bottom: 5px;
-}
-.s1{width: 6%;display: inline-block;margin-right: 10px}
-.s2{width: 5%;display: inline-block;}
-.s3{width: 5%;display: inline-block;}
-.s4{width: 35%;display: inline-block; margin-right: 30px}
-.s5{width: 10%;display: inline-block;}
-.s6{width: 10%;display: inline-block;}
-
-
 
 
 #rank1 {
@@ -77,29 +47,22 @@
 
 }
 #rank2 {
-	margin-left: 130px;
-	margin-right: 75px;
+	margin-left: 10px;
+	margin-right: 50px;
 	display: inline-block;
 	text-align: center;
 }
 #rank3 {
 	margin-right: -15px;
-	margin-left: 80px;
+	margin-left: 50px;
 	display: inline-block;
 	text-align: center;
 }
- span{
-	 position: relative;
- }
 
 
 .buttomRate{
 	text-align: center;
 	font-size: 80%;
-}
-.bestThree{
-	/*margin-top: 20px;*/
-	background-color: rgba(237, 237, 237, 0.44);;
 }
 
 .bestThree #rank2 img{
@@ -113,8 +76,8 @@
 
 .bestThree #rank1 img{
 
-	width: 70px;
-	height:70px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	border: solid 3px;
 	border-color: gold;
@@ -127,13 +90,6 @@
 	border: solid 3px;
 	border-color: #be4723;
 }
-
-#rank1{
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-
  .number{
 	 display: inline-block;
 	 float: right;
@@ -149,9 +105,8 @@
 	 margin-right: 10px;
  }
 
-#rankContainer .top10 .people .person .imageSpan{
-	/*float: right;*/
-	/*margin-left: 30px;*/
+.container .top10 .people .person .imageSpan{
+	float: right;
 }
 
 .abc{
@@ -163,7 +118,7 @@
 
 
 
-#rankContainer .top10 .people .person .imageSpan img{
+.container .top10 .people .person .imageSpan img{
 	width: 40px;
 	height: 40px;
 	margin-right: 5px;
@@ -192,22 +147,18 @@
 }
 
 .footer{
-	margin: auto;
-	/*align-items: center;*/
+	align-items: center;
 
 }
 .footer button{
 	display: block;
-
+	margin-bottom: 20px;
 	font-size: 10px;
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	margin: auto;
 	margin-top: 20px;
-	margin-bottom: 30px;
-	/*margin-left: 170px;*/
-
+	margin-left: 170px;
 	padding-top: 10px;
 }
 
@@ -224,8 +175,7 @@ hr{
 }
 
 .person{
-	direction: rtl;
-	/*float: left;*/
+	float: left;
 	display: block;
 	width: 100%;
 	height:60px ;

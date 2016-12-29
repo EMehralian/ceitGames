@@ -56,18 +56,27 @@
     color: gray;
 }
 
-#container button a{
+button a{
     color: white !important;
 }
-.rate .score{
+.gamerate .score{
     display: inline;
 }
-.rate .buttomRate{
+.gamerate .buttomRate{
     display: inline;
+
 }
 
+.gamerate .score{
+    font-size: 80%;
+}
+
+.blue-star{
+    color: blue;
+    font-size: 130%;
+}
 .fa-star{
-    color: rgba(17, 26, 10, 0.23);
+    font-size: 150%;
 }
 
 #tabRow{
@@ -119,6 +128,183 @@ ul.tab li a:focus{
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     border-top: none;
+}
+#content{
+    /*direction: rtl;*/
+    width: 60%;
+    margin: auto;
+}
+
+#gameInfo{
+    direction: rtl;
+}
+
+#gameInfo .image{
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#gameInfo img{
+    height: 200px;
+    width: 400px;
+}
+
+#Usercomments{
+    direction: rtl;
+}
+
+#ranking h3{
+    direction: rtl;
+}
+
+#Usercomments h3{
+    display: inline;
+}
+
+#Usercomments button{
+    margin-right: 400px;
+}
+
+.comment{
+    direction: rtl;
+    height: 50px;
+}
+
+.comment:nth-child(odd){
+    background-color: rgba(161, 174, 166, 0.23);
+}
+
+.comment .imageSpan{
+    float: right;
+}
+.comment .imageSpan img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 60%;
+    border: solid 1px;
+    border-color: #d9d3cc;
+}
+
+#Usercomments .name{
+    display: inline;
+    color: blue;
+
+}
+#Usercomments .date{
+    text-align: right;
+
+}
+
+#Usercomments .message{
+    display: inline;
+    color: blue;
+}
+
+#Usercomments .rate{
+    display: inline-block;
+    margin-right: 420px;
+    margin-top: 0px;
+    font-size: 100%;
+}
+
+.gray-star{
+    color: gray;
+}
+
+#Usercomments #load{
+    margin-right:300px;
+    margin-top: 50px;
+}
+
+#similarGames{
+    direction: rtl;
+    margin: auto;
+}
+
+#similarGames .newGamesItem{
+
+    margin: 5px;
+    background-size: 100% 100%;
+    border: 1px solid rgba(105, 113, 108, 0.44);
+    width: 170px;
+    display: inline-block;
+}
+
+#similarGames .newGamesItem:hover{
+    margin: 3px;
+    background-size: 100% 100%;
+    box-shadow: 5px 10px 10px rgb(135, 135, 135);
+    /*border: 1px solid;*/
+
+}
+
+#similarGames .newGamesItem img{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+#similarGames .newGamesItem .name{
+    color: blue;
+}
+
+#similarGames .newGamesItem .buttomRate{
+    text-align: right;
+}
+
+#images h3{
+    direction: rtl;
+}
+/*#images #selected{*/
+    /*height: 350px;*/
+    /*width: 600px;*/
+    /*margin: auto;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 50px;*/
+/*}*/
+
+/*#images #selected img{*/
+    /*height: 350px;*/
+    /*width: 600px;*/
+/*}*/
+
+
+#images #video_box{
+    height: 350px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#images #player{
+    height: 350px;
+    width: 600px;
+}
+#sliderContainer{
+    width: 75%;
+    margin: auto;
+}
+
+#Slider{
+    margin: auto;
+    /*background-color: red;*/
+    height: 200px;
+}
+
+#Slider .item{
+    margin: 5px;
+    background-size: 100% 100%;
+    border: 1px solid rgba(105, 113, 108, 0.44);
+}
+
+#Slider .item img{
+    display: block;
+    width: 100%;
+    height: 100px;
 }

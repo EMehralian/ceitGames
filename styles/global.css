@@ -14,3 +14,92 @@ html, body {
     color: blue;
 }
 
+.footer-top{
+    background: #f1f3f1;
+}
+#footer-amirkabir-icon{
+    float: left;
+    direction: rtl;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#footer-links{
+    list-style-type: none;
+    margin-top: 25px;
+
+}
+#footer-social-div {
+    direction: rtl;
+    text-align: right;
+    margin-right: 350px;
+}
+.row {
+    margin: 0px;
+}
+#social {
+    padding: 15px;
+    font-size: 22px;
+}
+.footer-down {
+    background: #cfd2d7;
+    min-height: 100px;
+}
+.col-sm-12{
+    padding: 0px;
+}
+.text-center {
+    margin: auto;
+}
+.vertical-align-wrap {
+    display: table;
+    width: 100%;
+}
+.col-sm-12{
+    padding: 0px;
+}
+
+.social {
+    border-radius: 50%;
+    background: #9c9ca4;
+    color: #fffefe;
+    min-width : 30px;
+    min-height: 30px;
+    text-align: center;
+
+    padding: 4px 0px 0px 0px;
+    vertical-align: middle;
+}
+
+
+#footer-links li{
+    display: inline;
+    margin-right: 10px;
+}
+#footer-links li a{
+    text-decoration: none;
+
+    color: #43A4EE;
+}
+#menu {
+    padding: 0px;
+    height: auto;
+    margin-top: 7px;
+}
+
+#footer-amirkabir-icon a{
+    text-decoration: none;
+}
+.studio {
+    color: #2dc7ff;
+}
+
+#content-trailer span i{
+    color: lightgray;
+    margin-top: 3px;
+}
+#trailer-icon{
+    margin-top: 5px;
+}
+#amirkabir{
+    margin-top: 0px; !important;
+}

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>games</title>
-    <link href="../styles/games.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../styles/global.css">
-    <script src="../js/games.js"></script>
+    <link rel="stylesheet" href="../styles/leaderboard.css">
+    <link rel="stylesheet" href="../styles/games.css">
+    <link href="../owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="../fonts/ionicons.css" rel="stylesheet">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../_/bootstrap.min.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <link href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/font-face.css" rel="stylesheet"
-          type="text/css"/>
+
+
 </head>
 <body>
 
@@ -23,31 +27,31 @@
                 <a href="../html/register.html">شروع بازی</a>
             </button>
 
-            <div class="Info">
-                <div class="name">
-                    Batterfiled 4: Dragon's Theeth
-                </div>
-                <div class="categury">
-                    <span>اکشن</span>،<span>اول شخص</span>،<span>مولتی مدیا</span>
-                </div>
-                <div class="rate">
-                    <div class="buttomRate">
-                        <i class="fa fa-star blue-star"></i>
-                        <i class="fa fa-star blue-star"></i>
-                        <i class="fa fa-star blue-star"></i>
-                        <i class="fa fa-star "></i>
-                        <i class="fa fa-star "></i>
-                    </div>
-                    <div class="score">
-                        ۴.۳(۸۴رای)
-                    </div>
-                </div>
-            </div>
+            <!--<div class="Info">-->
+                <!--<div class="name">-->
+                    <!--Batterfiled 4: Dragon's Theeth-->
+                <!--</div>-->
+                <!--<div class="categury">-->
+                    <!--<span>اکشن</span>،<span>اول شخص</span>،<span>مولتی مدیا</span>-->
+                <!--</div>-->
+                <!--<div class="gamerate">-->
+                    <!--<div class="buttomRate">-->
+                        <!--<i class="fa fa-star blue-star"></i>-->
+                        <!--<i class="fa fa-star blue-star"></i>-->
+                        <!--<i class="fa fa-star blue-star"></i>-->
+                        <!--<i class="fa fa-star"></i>-->
+                        <!--<i class="fa fa-star"></i>-->
+                    <!--</div>-->
+                    <!--<div class="score">-->
+                        <!--۴.۳(۸۴رای)-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
 
-            <span class="imageSpan">
-                <img src="../images/call-of-duty-background-17.jpg" alt="" />
-            </span>
+            <!--<span class="imageSpan">-->
+                <!--<img src="../images/call-of-duty-background-17.jpg" alt="" />-->
+            <!--</span>-->
 
         </div>
     </div>
@@ -55,39 +59,291 @@
 </div>
 <div id="tabRow">
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'gameInfo')">اطلاعات بازی</a></li>
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'ranking')">رتبه بندی و امتیازات</a></li>
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Usercomments')">نظرات کاربران</a></li>
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'similarGames')">بازی های مشابه</a></li>
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'images')">عکس ها و ویدیوها</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'gameInfo')">اطلاعات بازی</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ranking')">رتبه بندی و امتیازات</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Usercomments')">نظرات کاربران</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'similarGames')">بازی های مشابه</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'images')">عکس ها و ویدیوها</a></li>
 
     </ul>
 </div>
-
+<div id="content">
 <div id="gameInfo" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
+    <h3>اطلاعات بازی</h3>
 </div>
 
 <div id="ranking" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <h3>رتبه بندی و امتیازات</h3>
+    <hr/>
+    <div id="rankContainer">
+
+        <div class="bestThree">
+            <div id="rank2">
+                <span class="imageSpan">
+					<img src="../assets/user.png" alt="" />
+					<div class="hexagon">۳۱</div>
+				</span>
+                <div class="buttomInfo">
+                    <div class="name">
+                        سروش صحت
+                    </div>
+                    <div class="score">
+                        ۱۵۰۰۰۰۰
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="rank1">
+                <span class="imageSpan">
+					<img src="../assets/user.png" alt="" />
+					<div class="hexagon">۳۲</div>
+				</span>
+                <div class="buttomInfo">
+                    <div class="name">
+                        کریم عبدالجبار
+                    </div>
+                    <div class="score">
+                        ۱۵۰۰۰۰۰
+                    </div>
+                </div>
+            </div>
+
+            <div id="rank3">
+                <span class="imageSpan">
+					<img src="../assets/user.png" alt="" />
+					<div class="hexagon">۲۹</div>
+				</span>
+                <div class="buttomInfo">
+                    <div class="name">
+                        الب ارسلان
+                    </div>
+                    <div class="score">
+                        ۱۵۰۰۰۰۰
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top10">
+            <div class="people" >
+                <div id="head">
+                    <span class="s1">
+                        رتبه
+                    </span>
+                    <span class="s2">2</span>
+                    <span class="s3">بازیکن</span>
+                    <span class="s4"></span>
+                    <span class="s5">سطح</span>
+                    <span class="s6">تغییر رتبه</span>
+                    <span class="s7">امتیاز</span>
+
+                </div>
+
+
+                <div class="person" ><a>
+                    <span class="s1">1</span>
+                    <span class="s2"></span>
+                    <span class="s3">
+                        <span class="imageSpan">
+						<img src="../assets/user.png" alt="" />
+					    </span>
+                    </span>
+                    <span class="s4">کاظم اسماعیلی</span>
+                    <span class="s5">۳۲</span>
+                    <span class="s6">(+۱۰۷)</span>
+                    <span class="s7">۱۵۰۰۰۰۰۰۰</span>
+
+                </a></div>
+
+                <div class="person"  ><a>
+                    <span class="s1">1</span>
+                    <span class="s2"></span>
+                    <span class="s3">
+                        <span class="imageSpan">
+						<img src="../assets/user.png" alt="" />
+					    </span>
+                    </span>
+                    <span class="s4">کاظم اسماعیلی</span>
+                    <span class="s5">۳۲</span>
+                    <span class="s6">(+۱۰۷)</span>
+                    <span class="s7">۱۵۰۰۰۰۰۰۰</span>
+
+                </a></div>
+                <div class="person" ><a>
+                    <span class="s1">1</span>
+                    <span class="s2"></span>
+                    <span class="s3">
+                        <span class="imageSpan">
+						<img src="../assets/user.png" alt="" />
+					    </span>
+                    </span>
+                    <span class="s4">کاظم اسماعیلی</span>
+                    <span class="s5">۳۲</span>
+                    <span class="s6">(+۱۰۷)</span>
+                    <span class="s7">۱۵۰۰۰۰۰۰۰</span>
+
+                </a></div>
+                <div class="person"  ><a>
+                    <span class="s1">1</span>
+                    <span class="s2"></span>
+                    <span class="s3">
+                        <span class="imageSpan">
+						<img src="../assets/user.png" alt="" />
+					    </span>
+                    </span>
+                    <span class="s4">کاظم اسماعیلی</span>
+                    <span class="s5">۳۲</span>
+                    <span class="s6">(+۱۰۷)</span>
+                    <span class="s7">۱۵۰۰۰۰۰۰۰</span>
+
+                </a></div>
+                <div class="person"  ><a>
+                    <span class="s1">1</span>
+                    <span class="s2"></span>
+                    <span class="s3">
+                        <span class="imageSpan">
+						<img src="../assets/user.png" alt="" />
+					    </span>
+                    </span>
+                    <span class="s4">کاظم اسماعیلی</span>
+                    <span class="s5">۳۲</span>
+                    <span class="s6">(+۱۰۷)</span>
+                    <span class="s7">۱۵۰۰۰۰۰۰۰</span>
+
+                </a></div>
+            </div>
+        </div>
+        <div class="footer">
+            <button type="button"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+
+
+        </div>
+    </div>
 </div>
 
 <div id="Usercomments" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3 id="commentID">نظرات کاربران</h3>
+    <span>(۸۴ نظر)</span>
+    <button class="btn btn-primary">
+        <a href="../html/register.html">نظر دهید</a>
+    </button>
+    <hr/>
+
+    <div id="comments">
+    <!--<div class="comment">-->
+        <!--<span class="imageSpan">-->
+			<!--<img src="../assets/user.png" alt="" />-->
+        <!--</span>-->
+        <!--<div class="info">-->
+            <!--<div class="date">-->
+                <!--۲۲ آذر ۹۵-->
+            <!--</div>-->
+            <!--<div class="name">-->
+                <!--ali:-->
+            <!--</div>-->
+            <!--<div class="message">-->
+                <!--بسیار بازی زیبا و قشنگی بود-->
+            <!--</div>-->
+            <!--<div class="rate">-->
+                <!--<i class="fa fa-star gray-star"></i>-->
+                <!--<i class="fa fa-star gray-star"></i>-->
+                <!--<i class="fa fa-star gray-star"></i>-->
+                <!--<i class="fa fa-star gray-star"></i>-->
+                <!--<i class="fa fa-star"></i>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    </div>
+
+    <button id="load" class="btn btn-primary">
+        <a href="../html/register.html">بارگذاری نظرات بعدی</a>
+    </button>
+
+
 </div>
 
 <div id="similarGames" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3>بازی های مشابه</h3>
+    <hr/>
+    <div id="similarContainer">
+        <!--<div class="newGamesItem">-->
+            <!--<img src="../images/best_hd_assassins_creed_black_flag_game_wallpapers.jpg">-->
+            <!--<div class="Info">-->
+                <!--<div class="name">-->
+                    <!--FIFA 2016-->
+                <!--</div>-->
+                <!--<div class="categury">-->
+                    <!--ورزشی-->
+                <!--</div>-->
+                <!--<div class="buttomRate">-->
+                    <!--<i class="fa fa-star blue-star"></i>-->
+                    <!--<i class="fa fa-star blue-star"></i>-->
+                    <!--<i class="fa fa-star blue-star"></i>-->
+                    <!--<i class="fa fa-star "></i>-->
+                    <!--<i class="fa fa-star "></i>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+    </div>
+
 </div>
 
 <div id="images" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3>عکس ها و ویدیو ها</h3>
+    <hr>
+
+    <div id="video_box">
+        <!--<div id="video_overlays"></div>-->
+            <video id="player" poster="../images/call-of-duty-background-17.jpg" src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm" onclick="this.play(); ">
+                Your browser does not support this streaming content.
+            </video>
+        <!--</div>-->
+    </div>
+
+    <!---->
+    <!--<div id="selected">-->
+        <!--<img src="../images/call-of-duty-background-18.jpg">-->
+    <!--</div>-->
+
+
+
+    <div id="sliderContainer">
+
+        <div id="Slider"  class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="../images/ogImage.img.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/Mortal-Kombat-X-hack-cheats.png">
+                </div>
+                <div class="item">
+                    <img src="../images/game-wallpaper-rain-ship-helicopter-battlefield-games-background.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/best_hd_assassins_creed_black_flag_game_wallpapers.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/assassins-creed-3-wallpaper-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 
+<div id="footer">
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../owl-carousel/owl.carousel.js"></script>
+<script src="../js/games.js"></script>
 </body>
 </html>
