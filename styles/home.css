@@ -273,51 +273,17 @@ header{
     line-height: 1.4;
 }
 
-#footer #top{
-    margin-top: 20px;
-    height: 70px;
-    background-color: white;
-}
 
-#footer #top span{
-    color: blue;
-    margin-left: 30px;
-}
-
-.amirkabir{
-    color: gray !important;
-}
-.logo{
-    font-size: 125%;
-    line-height: 70%;
-}
-
-#footer #down{
-    height: 70px;
-    color: rgba(135, 135, 135, 0.44);
-    background-color: rgba(139, 150, 143, 0.44);
-    text-align: center;
-    font-size: 150%;
-    padding: 20px 0px;
-}
 #l2{
     margin-left: 250px;
     margin-right: 100px;
 }
-#social{
-    margin-left: 980px;
-    margin-bottom: 30px;
+
+#social a{
+    font-size: 200%;
+    color: gray;
 }
-#l1 .amirkabir{
-    color: white !important;
-}
-#l1{
-    margin-left: 500px;
-    margin-top: 20px;
-}
-#console{
-    color: white;
-}
+
 
 .hoverblur{
     background-color: rgba(45, 141, 47,0.5);
@@ -334,4 +300,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.amirkabir{
+    color: gray !important;
 }

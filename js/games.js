@@ -138,32 +138,18 @@ for(i=0 ; i<8; i++) {  ////items in the newGame slider
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
     $("#Slider").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items: 4,
         pagination: true,
         navigationText: [
-            "<i class='fa fa-chevron-left'></i>",
-            "<i class='fa fa-chevron-right'></i>"
         ]
 
     });
+
+    document.getElementById('gameInfo').style.display = "block";
+
 });
 
 

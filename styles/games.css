@@ -1,4 +1,17 @@
 
+#nav{
+    height: 50px;
+    background-color: rgba(190, 204, 196, 0.49);
+}
+
+#l1{
+    margin-left: 800px;
+
+}
+#l1 .amirkabir,#console {
+    color: rgba(139, 150, 143, 0.71)!important;
+}
+
 #header{
     /*position: relative;*/
     background-image:url("../images/header.jpg");
