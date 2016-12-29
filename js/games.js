@@ -56,6 +56,52 @@ document.getElementById("gameInfo").appendChild(p);
 document.getElementById("gameInfo").appendChild(im);
 document.getElementById("gameInfo").appendChild(p2);
 
+// ------------------------------------------رتبه بندی------------------------------------------
+
+
+for (i = 0 ;i <5 ;i++){
+    person=document.createElement("div");
+    person.className="person";
+    a= document.createElement("a");
+    s1=document.createElement("span");
+    s1.className="s1";
+    s1.innerHTML=i;
+    s2=document.createElement("span");
+    s2.className="s2";
+    s3=document.createElement("span");
+    s3.className="s3";
+
+    sp= document.createElement("span");
+    sp.className="imageSpan";
+    img = document.createElement("img");
+    img.src="../assets/user.png";
+    sp.appendChild(img);
+    s3.appendChild(sp)
+
+    s4=document.createElement("span");
+    s4.className="s4";
+    s4.innerHTML="کاظم اسماعیلی"
+    s5=document.createElement("span");
+    s5.className="s5";
+    s5.innerHTML="32";
+    s6=document.createElement("span");
+    s6.className="s6";
+    s6.innerHTML="(+107)"
+    s7=document.createElement("span");
+    s7.className="s7";
+    s7.innerHTML="150000000";
+    a.appendChild(s1);
+    a.appendChild(s2);
+    a.appendChild(s3);
+    a.appendChild(s4);
+    a.appendChild(s5);
+    a.appendChild(s6);
+    a.appendChild(s7);
+    person.appendChild(a);
+    document.getElementsByClassName("people")[0].appendChild(person);
+}
+
+
 // -------------------------------------------نظرات کاربران----------------------------------
 
 for(i=0 ; i< 5; i++){
