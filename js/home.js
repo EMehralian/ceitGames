@@ -10,12 +10,36 @@ for(var i=0 ; i<5; i++) {  ////items in the main slider
     item.className = "item";
     div=document.createElement("div");
     div.className = "itemblur";
-    item.appendChild(div);
+    cont= document.createElement('div');
+    cont.className="cont";
+
     var p =document.createElement("p");
     p.className = "itemTitle";
     p.innerHTML="بررسی فلان بازی";
-    item.appendChild(p);
+
+    p1 =document.createElement("p");
+    p1.className = "itemRate";
+    p1.innerHTML="تعداد نظرات: ۷۳";
+
+    var but = document.createElement("button");
+    but.className="btn btn-default";
+
+    var a = document.createElement("a");
+    a.href="../html/register.html";
+    a.innerHTML="صفحه بازی";
+
+    but.appendChild(a);
+
+    cont.appendChild(p);
+    cont.appendChild(p1);
+    cont.appendChild(but);
+    cont.style.display="none";
+    div.appendChild(cont);
+    item.appendChild(div);
+
+
     document.getElementById("slider").appendChild(item);
+
 }
 
 
@@ -146,19 +170,23 @@ $(document).ready(function() {
             e.preventDefault();
             $(this).css('height','110');
             $(this).find('div').addClass("hoverblur");
+            $(this).find('.cont').css("display","block");
         })
         .on('mouseout','.item', function(e) {
             var carousel = $('.owl-carousel').data('owl.carousel');
             e.preventDefault();
             $(this).css('height','100');
             $(this).find('div').removeClass("hoverblur");
+            $(this).find('.cont').css("display","none");
             console.log(carousel);
         })
         .on('click', '.item', function(e) {
-            $('#slider .item div').removeClass('clickblur')
+            $('#slider .item div').removeClass('clickblur');
+            // $('#slider .item').find('.cont').css("display","none");
             e.preventDefault();
             var bg = $(this).css('background-image');
             $(this).find('div').addClass("clickblur");
+            // $(this).find('.cont').css("display","block");
             bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
             $("#firstViewPoint").css("height",$(window).height()-100)
                 .css("background-image","url("+bg+")");
@@ -172,3 +200,6 @@ $(document).ready(function() {
 
 
 
+function focus (){
+
+}

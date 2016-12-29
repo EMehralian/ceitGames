@@ -41,9 +41,25 @@ header{
 }
 
 #slider .item p{
-    text-align: right;
-    line-height: 170px;
     color: white;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 110%;
+}
+
+#slider .item .itemRate{
+    color: white;
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 70%;
+}
+
+#slider .item .btn{
+    margin-top: 10px;
+    margin-left: 150px;
+
 }
 
 #register{
