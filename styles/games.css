@@ -2,22 +2,24 @@
 #nav{
     height: 50px;
     background-color: rgba(190, 204, 196, 0.49);
+    padding-top: 5px;
 }
 
 #l1{
-    display: inline-block;
-    /*margin-left: 800px;*/
-    margin-bottom: 20px;
+
 }
 #l1 .amirkabir,#console {
     color: rgba(139, 150, 143, 0.71)!important;
 }
 
 #signInBtn{
-    display: inline-block;
+    display: inline-block ;
     font-size: 130%;
-    margin-top: 10px;
     margin-left: 250px;
+}
+#signInBtn i{
+    font-size: 130%;
+    vertical-align: middle;
 }
 
 #search{
@@ -29,7 +31,7 @@
     margin-right: 0px;
 }
 #box{
-    display: inline-block;
+    /*display: inline-block;*/
     /*margin-top: 10px;*/
     margin-left: 50px;
 }
