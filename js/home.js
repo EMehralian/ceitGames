@@ -46,6 +46,9 @@ for(var i=0 ; i<6; i++) {  ////items in the main slider
 
 
 for(i=0 ; i<8; i++) {  ////items in the newGame slider
+    var itemlink= document.createElement("a");
+    itemlink.setAttribute("href","../html/games.html")
+    itemlink.style.display='block';
     item = document.createElement("div");
     item.className = "newGamesItem";
     sp= document.createElement("span");
@@ -78,7 +81,8 @@ for(i=0 ; i<8; i++) {  ////items in the newGame slider
     inf.appendChild(Rate);
     item.appendChild(sp);
     item.appendChild(inf);
-    document.getElementById("newGamesSlider").appendChild(item);
+    itemlink.appendChild(item)
+    document.getElementById("newGamesSlider").appendChild(itemlink);
 }
 
 
@@ -165,18 +169,18 @@ $(document).ready(function() {
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items : 4,
         pagination:true,
-        afterAction: function(el){
-            //remove class active
-            this
-                .$owlItems
-                .removeClass('active')
-
-            //add class active
-            this
-                .$owlItems //owl internal $ object containing items
-                .eq(this.currentItem + 1)
-                .addClass('active')
-        }
+        // afterAction: function(el){
+        //     //remove class active
+        //     this
+        //         .$owlItems
+        //         .removeClass('active')
+        //
+        //     //add class active
+        //     this
+        //         .$owlItems //owl internal $ object containing items
+        //         .eq(this.currentItem + 1)
+        //         .addClass('active')
+        // }
     });
 
     });
