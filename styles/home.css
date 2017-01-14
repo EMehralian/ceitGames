@@ -10,6 +10,10 @@ header{
     background-size: cover;
 }
 
+.button{
+
+}
+
 #selectedGameTitle{
     color: white;
     margin-left: 500px;
@@ -293,7 +297,7 @@ header{
     width: 100%;
     height: 100%;
 }
-.clickblur{
+.activeblur{
     background-color: rgba(45, 41, 197,0.7);
     position: absolute;
     top: 0;

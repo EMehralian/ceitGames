@@ -5,7 +5,9 @@
 var div= document.createElement("div");
 
 
-for(var i=0 ; i<5; i++) {  ////items in the main slider
+
+
+for(var i=0 ; i<6; i++) {  ////items in the main slider
     var item = document.createElement("div");
     item.className = "item";
     div=document.createElement("div");
@@ -129,11 +131,28 @@ for(i=0 ; i< 5; i++){
 
 $(document).ready(function() {
     $("#slider").owlCarousel({
-        autoPlay: 5000, //Set AutoPlay to 3 seconds
-        items : 5,
-        pagination:false
+        center: true,
+        loop: true,
+        autoPlay: 5000, //Set AutoPlay to 5 seconds
+        // items : 5,
+        pagination:false,
+
+
+
+        afterAction: function(el){
+            //remove class active
+            this.$owlItems .removeClass('active')
+
+            //add class active
+            this //owl internal $ object containing items
+                .$owlItems.eq(this.currentItem + 1).addClass('active')
+        }
 
         });
+    // $('#slider .active .item .itemblur').removeClass("activeblur")
+    // $('#slider .item .itemblur').addClass("activeblur")
+    // $("#slider.active").addClass("HELLO!");
+
     $("#firstViewPoint").css("height",$(window).height()-100)
                         .css("background-image","url('../images/call-of-duty-background-18.jpg')");
 
@@ -145,7 +164,20 @@ $(document).ready(function() {
     $("#newGamesSlider").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items : 4,
-        pagination:true
+        pagination:true,
+        afterAction: function(el){
+            //remove class active
+            this
+                .$owlItems
+                .removeClass('active')
+
+            //add class active
+            this
+                .$owlItems //owl internal $ object containing items
+                .eq(this.currentItem + 1)
+                .addClass('active')
+        }
+    });
 
     });
     $(".owl-controls").appendTo($("#pagination"));
@@ -181,11 +213,13 @@ $(document).ready(function() {
             console.log(carousel);
         })
         .on('click', '.item', function(e) {
-            $('#slider .item div').removeClass('clickblur');
+            console.log(this.className);
+            // $('#slider .item div').removeClass('clickblur');
             // $('#slider .item').find('.cont').css("display","none");
             e.preventDefault();
             var bg = $(this).css('background-image');
-            $(this).find('div').addClass("clickblur");
+            // $(this).find('div').removeClass('itemblur');
+            // $(this).find('div').addClass('activeblur');
             // $(this).find('.cont').css("display","block");
             bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
             $("#firstViewPoint").css("height",$(window).height()-100)
@@ -196,7 +230,7 @@ $(document).ready(function() {
     ;
 
 
-});
+
 
 
 
