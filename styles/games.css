@@ -396,3 +396,15 @@ display: inline-block;
 .people .fa-star{
     color: white;
 }
+.fa-caret-up{
+    color: green;
+}
+.fa-caret-down{
+    color: red;
+}
+#head .s3{
+    margin-left: -20px;
+}
+#head .s7{
+    margin-right: 10px;
+}

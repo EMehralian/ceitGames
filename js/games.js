@@ -98,6 +98,9 @@ for (i = 0 ;i <5 ;i++){
     s6=document.createElement("span");
     s6.className="s6";
     s6.innerHTML="(+107)"
+    arr = document.createElement("i");
+    arr.className="fa fa-caret-up";
+    s6.prepend(arr);
     s7=document.createElement("span");
     s7.className="s7";
     s7.innerHTML="150000000";

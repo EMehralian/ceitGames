@@ -30,7 +30,7 @@ html, body {
     color: white;
 }
 .studio{
-    color: rgba(60, 201, 198, 0.71);
+    color: rgba(60, 201, 198, 0.71) !important;
 }
 
 #footer #top{
