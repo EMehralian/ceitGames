@@ -60,6 +60,8 @@ document.getElementById("gameInfo").appendChild(p2);
 
 
 for (i = 0 ;i <5 ;i++){
+
+
     person=document.createElement("div");
     person.className="person";
     a= document.createElement("a");
@@ -68,6 +70,15 @@ for (i = 0 ;i <5 ;i++){
     s1.innerHTML=i;
     s2=document.createElement("span");
     s2.className="s2";
+    if(i<3){
+        medal = document.createElement("i");
+        medal.className="fa fa-star";
+        if(i==0) medal.className+=" golden_circle-icon";
+        else if(i==1) medal.className+=" silver_circle-icon";
+        else if(i==2) medal.className+=" bronze_circle-icon";
+        s2.appendChild(medal);
+
+    }
     s3=document.createElement("span");
     s3.className="s3";
 
@@ -189,8 +200,11 @@ $(document).ready(function() {
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items: 4,
         pagination: true,
+        navigation:true,
         navigationText: [
-        ]
+            "<",">"
+
+        ],
 
     });
 

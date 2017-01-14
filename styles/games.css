@@ -377,3 +377,22 @@ display: inline-block;
     margin-top: 5px;
     margin-left: 920px; ;
 }
+
+.golden_circle-icon{
+    background: gold;
+    padding:5px;
+    border-radius: 50%;
+}
+.silver_circle-icon{
+    background: silver;
+    padding:5px;
+    border-radius: 50%;
+}
+.bronze_circle-icon{
+    background: #cd7f32;
+    padding:5px;
+    border-radius: 50%;
+}
+.people .fa-star{
+    color: white;
+}
