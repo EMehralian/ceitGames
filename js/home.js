@@ -140,7 +140,7 @@ $(document).ready(function() {
         autoPlay: 5000, //Set AutoPlay to 5 seconds
         // items : 5,
         pagination:false,
-
+        autoHeight:true,
 
 
         afterAction: function(el){
@@ -161,7 +161,7 @@ $(document).ready(function() {
                         .css("background-image","url('../images/call-of-duty-background-18.jpg')");
 
     $(".item").each(function(i, obj) {
-        $(obj).css("height",100)
+        $(obj).css("height",'100')
             .css("background-image","url('../images/421645.jpg')");
     });
 

@@ -200,14 +200,16 @@ for(i=0 ; i<8; i++) {  ////items in the newGame slider
 
 $(document).ready(function() {
     $("#Slider").owlCarousel({
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
-        items: 4,
-        pagination: true,
-        navigation:true,
-        navigationText: [
-            "<",">"
+        items:4,
+        autoPlay: 3000,
+        merge:true,
+        loop:true,
+        center:true,
+        // margin:10,
+        // video:true,
 
-        ],
+
+        // singleItem:true,
 
     });
 
