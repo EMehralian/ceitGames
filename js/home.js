@@ -2,47 +2,73 @@
  * Created by ehsan on 12/23/16.
  */
 
-var div= document.createElement("div");
+var sliderAjaxObject=0;
+var newgameAjaxObject=0;
+main();
 
 
+function ajaxCall() {
+// ----------------------------ajax get request-------------------------------
+    return $.ajax({
+        url: " http://api.ie.ce-it.ir/F95/home",
+        dataType: 'json',
+        success: function (Object) {
+            var t = (Object)['response']['result']['homepage'];
+            sliderAjaxObject = t['slider'];
+            newgameAjaxObject = t['newgame'];
+            console.log(sliderAjaxObject.length);
+            // $('#slider').show();
+        }
 
-
-for(var i=0 ; i<6; i++) {  ////items in the main slider
-    var item = document.createElement("div");
-    item.className = "item";
-    div=document.createElement("div");
-    div.className = "itemblur";
-    cont= document.createElement('div');
-    cont.className="cont";
-
-    var p =document.createElement("p");
-    p.className = "itemTitle";
-    p.innerHTML="بررسی فلان بازی";
-
-    p1 =document.createElement("p");
-    p1.className = "itemRate";
-    p1.innerHTML="تعداد نظرات: ۷۳";
-
-    var but = document.createElement("button");
-    but.className="btn btn-default";
-
-    var a = document.createElement("a");
-    a.href="../html/register.html";
-    a.innerHTML="صفحه بازی";
-
-    but.appendChild(a);
-
-    cont.appendChild(p);
-    cont.appendChild(p1);
-    cont.appendChild(but);
-    cont.style.display="none";
-    div.appendChild(cont);
-    item.appendChild(div);
-
-
-    document.getElementById("slider").appendChild(item);
+});
 
 }
+
+function main() {
+    $.when(ajaxCall()).done(function () {
+       makeScreen();
+    });
+
+}
+
+function makeScreen(){}
+    //............................items in the main slider..................................
+    console.log(sliderAjaxObject.length);
+    for(var i=0 ; i<6; i++) {
+        console.log(i);
+        var item = document.createElement("div");
+        item.className = "item";
+        div=document.createElement("div");
+        div.className = "itemblur";
+        cont= document.createElement('div');
+        cont.className="cont";
+
+        var p =document.createElement("p");
+        p.className = "itemTitle";
+        p.innerHTML="بررسی  بازی فلان";
+
+        p1 =document.createElement("p");
+        p1.className = "itemRate";
+        p1.innerHTML="تعداد نظرات: ۷۳";
+
+        var but = document.createElement("button");
+        but.className="btn btn-default";
+
+        var a = document.createElement("a");
+        a.href="../html/games.html";
+        a.innerHTML="صفحه بازی";
+        but.appendChild(a);
+        cont.appendChild(p);
+        cont.appendChild(p1);
+        cont.appendChild(but);
+        cont.style.display="none";
+        div.appendChild(cont);
+        item.appendChild(div);
+
+        document.getElementById("slider").appendChild(item);
+    }
+
+
 
 
 for(i=0 ; i<8; i++) {  ////items in the newGame slider
@@ -140,7 +166,7 @@ $(document).ready(function() {
         autoPlay: 5000, //Set AutoPlay to 5 seconds
         // items : 5,
         pagination:false,
-        autoHeight:true,
+        // autoHeight:true,
 
 
         afterAction: function(el){
@@ -186,18 +212,7 @@ $(document).ready(function() {
     });
     $(".owl-controls").appendTo($("#pagination"));
 
-// ----------------------------ajax get request-------------------------------
-    $.ajax({
-        url: " http://api.ie.ce-it.ir/F95/home",
-        dataType:'json',
-        success: function( Object ) {
-            var t= (Object)['response']['result']['homepage'];
-            var slider=t['slider'];
-            var newgame= t['newgame']
-            console.log(slider);
-        }
 
-    });
 
 // -------------------------------slider_hover----------------------------------
     $('#slider')

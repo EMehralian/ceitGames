@@ -37,6 +37,7 @@ header{
 #slider{
     /*position: absolute;*/
     /*bottom: 0;*/
+    height: 100px;
 }
 
 #slider .item{
